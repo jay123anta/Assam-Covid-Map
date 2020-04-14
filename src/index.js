@@ -4,9 +4,15 @@ import "./styles/main.css";
 import App from "./App";
 import * as serviceWorker from "./serviceWorker";
 
+const Footer = () => (
+  <footer className="footer">
+    <p>Developed During Lockdown Period By: Jayanta Kr. Nath</p>
+  </footer>
+);
+
 ReactDOM.render(
   <React.StrictMode>
-    <App/>
+    <App/> <Footer/>
   </React.StrictMode>,
   document.getElementById("root")
 );
