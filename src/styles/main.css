@@ -625,6 +625,13 @@ video {
   }
 }
 
+.footer {
+  flex-shrink: 0;
+  text-align: center;
+  background-color: tomato;
+  color: white;
+}
+
 .spinner {
   position: relative;
   color: transparent !important;
@@ -653,21 +660,24 @@ video {
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
-  .chart-title {
-    font-size: 2rem !important;
-    color: text-black;
-    font-weight: bold;
-    text-transform: uppercase;
-    padding: 20px 0 20px 0;
-  }
-  .chart-content {
-    height: 100%;
-    width: 100%;
-  }
-  .chart-note {
-    height: 50px;
-    margin-top: 5px;
-  }
+}
+
+.chart-title {
+  font-size: 2rem !important;
+  color: text-black;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 20px 0 20px 0;
+}
+
+.chart-content {
+  height: 100%;
+  width: 100%;
+}
+
+.chart-note {
+  height: 50px;
+  margin-top: 5px;
 }
 
 @-webkit-keyframes spinAround {

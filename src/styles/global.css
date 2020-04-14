@@ -1,6 +1,12 @@
 @tailwind base;
 @tailwind components;
 
+.footer {
+  flex-shrink: 0;
+  text-align: center;
+  background-color: rgb(224, 107, 87);
+  color: white;
+}
 .spinner {
   position: relative;
   color: transparent !important;
@@ -28,6 +34,7 @@
           flex-direction: column;
           align-items: center;
           justify-content: flex-start;
+}
           .chart-title {
 
             font-size: 2rem !important;
@@ -36,7 +43,7 @@
             text-transform: uppercase;
             padding: 20px 0 20px 0;
           }
-
+        
           .chart-content {
             height: 100%;
             width: 100%;
@@ -45,8 +52,7 @@
           .chart-note {
            height: 50px;
            margin-top: 5px;
-          }
-    }    
+          }   
 
 @keyframes spinAround {
   from {
