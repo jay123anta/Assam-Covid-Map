@@ -619,16 +619,16 @@ video {
   }
 }
 
-@media (min-width: 1432px) {
+@media (min-width: 1900px) {
   .container {
-    max-width: 1432px;
+    max-width: 1900px;
   }
 }
 
 .footer {
   flex-shrink: 0;
   text-align: center;
-  background-color: tomato;
+  background-color: rgb(224, 107, 87);
   color: white;
 }
 
@@ -5517,7 +5517,7 @@ video {
 }
 
 .max-w-screen-avg {
-  max-width: 1432px;
+  max-width: 1900px;
 }
 
 .min-h-0 {
@@ -30035,7 +30035,7 @@ video {
   }
 
   .sm\:max-w-screen-avg {
-    max-width: 1432px;
+    max-width: 1900px;
   }
 
   .sm\:min-h-0 {
@@ -54544,7 +54544,7 @@ video {
   }
 
   .md\:max-w-screen-avg {
-    max-width: 1432px;
+    max-width: 1900px;
   }
 
   .md\:min-h-0 {
@@ -79053,7 +79053,7 @@ video {
   }
 
   .lg\:max-w-screen-avg {
-    max-width: 1432px;
+    max-width: 1900px;
   }
 
   .lg\:min-h-0 {
@@ -103562,7 +103562,7 @@ video {
   }
 
   .xl\:max-w-screen-avg {
-    max-width: 1432px;
+    max-width: 1900px;
   }
 
   .xl\:min-h-0 {
@@ -123259,7 +123259,7 @@ video {
   }
 }
 
-@media (min-width: 1432px) {
+@media (min-width: 1900px) {
   .avg\:sr-only {
     position: absolute;
     width: 1px;
@@ -128071,7 +128071,7 @@ video {
   }
 
   .avg\:max-w-screen-avg {
-    max-width: 1432px;
+    max-width: 1900px;
   }
 
   .avg\:min-h-0 {
