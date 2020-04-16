@@ -34,6 +34,7 @@
           flex-direction: column;
           align-items: center;
           justify-content: flex-start;
+}
           .chart-title {
 
             font-size: 2rem !important;
@@ -42,20 +43,17 @@
             text-transform: uppercase;
             padding: 20px 0 20px 0;
          
-        
+}
           .chart-content {
             height: 100%;
             width: 100%;
           
-
+}
           .chart-note {
            height: 50px;
            margin-top: 5px;
           } 
-		  }
-	}
-}
-
+		  
 @keyframes spinAround {
   from {
     transform: rotate(0deg);
