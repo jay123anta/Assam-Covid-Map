@@ -40,8 +40,8 @@ function Map(props) {
 
       const projection = d3
         .geoMercator()
-        .center([94,26.5])
-        .scale(2500)
+        .center([98,28])
+        .scale(1200)
         .translate([width / 2, height / 2]);
 
       const path = d3.geoPath(projection);
@@ -69,7 +69,7 @@ function Map(props) {
         .attr("class", "legend")
         .attr("transform", "translate(900,200)");
 
-      const numCells = 6;
+      const numCells = 4;
       const delta = Math.floor(statistic.maxConfirmed / (numCells - 1));
       const cells = Array.from(Array(numCells).keys()).map(i => i * delta);
 
