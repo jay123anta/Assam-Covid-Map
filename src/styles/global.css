@@ -42,18 +42,18 @@
 	    font-weight: bold;
             text-transform: uppercase;
             padding: 20px 0 20px 0;
-         
-}
+          }
+        
           .chart-content {
             height: 100%;
             width: 100%;
-          
-}
+          }
+
           .chart-note {
            height: 50px;
            margin-top: 5px;
-          } 
-		  
+          }   
+
 @keyframes spinAround {
   from {
     transform: rotate(0deg);
