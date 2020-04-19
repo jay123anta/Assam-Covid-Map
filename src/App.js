@@ -4,6 +4,8 @@ import Counter from "./components/counter";
 import DeepDive from './components/ChartAll';
 import axios from "axios";
 import Moment from 'moment';
+import Typist from 'react-typist';
+
 
 function App() {
   const [districts, setDistricts] = useState({});
@@ -26,7 +28,7 @@ function App() {
   }, [fetched]);
 
   const date = Date(updatedtime);
-  const formattedDate = Moment(date).format("LL");
+  const formattedDate = Moment(date).format("LLLL");
 // Outputs as "February 17, 2017"
 
   return (
@@ -42,7 +44,10 @@ function App() {
               <p className="text-sm text-center italic avg:text-left">
                 (Data Collected From https://covid19.assam.gov.in)
               </p>
-              <p className="text-sm text-center text-red-600 italic avg:text-left"> ( As On: {formattedDate} )</p>
+              <p className="text-sm text-center text-red-600 italic avg:text-left"> 
+              <Typist>
+              ( As On: {formattedDate} )
+              </Typist></p>
             </div>
             <div className="flex flex-col pl-0 avg:pl-2">
               <Counter districts={districts} />
