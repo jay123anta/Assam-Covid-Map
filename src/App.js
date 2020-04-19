@@ -11,7 +11,7 @@ function App() {
   useEffect(() => {
     if (fetched === false) {
       axios
-        .get("http://127.0.0.1:5000/data")
+        .get("https://covid19assam-api.herokuapp.com/data")
         .then(response => {
           setDistricts(response.data.Assam);
           setFetched(true);
