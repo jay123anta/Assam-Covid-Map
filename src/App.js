@@ -3,10 +3,12 @@ import Map from "./components/map";
 import Counter from "./components/counter";
 import DeepDive from './components/ChartAll';
 import axios from "axios";
+import Moment from 'moment';
 
 function App() {
   const [districts, setDistricts] = useState({});
   const [fetched, setFetched] = useState(false);
+  const [updatedtime, setUpdatedtime] = useState();
 
   useEffect(() => {
     if (fetched === false) {
@@ -14,6 +16,7 @@ function App() {
         .get("https://covid19assam-api.herokuapp.com/data")
         .then(response => {
           setDistricts(response.data.Assam);
+          setUpdatedtime(response.data.Time);
           setFetched(true);
         })
         .catch(err => {
@@ -21,6 +24,10 @@ function App() {
         });
     }
   }, [fetched]);
+
+  const date = Date(updatedtime);
+  const formattedDate = Moment(date).format("LL");
+// Outputs as "February 17, 2017"
 
   return (
     <div className="flex bg-fiord-100 min-h-screen min-w-full justify-center">
@@ -35,6 +42,7 @@ function App() {
               <p className="text-sm text-center italic avg:text-left">
                 (Data Collected From https://covid19.assam.gov.in)
               </p>
+              <p className="text-sm text-center text-red-600 italic avg:text-left"> ( As On: {formattedDate} )</p>
             </div>
             <div className="flex flex-col pl-0 avg:pl-2">
               <Counter districts={districts} />
