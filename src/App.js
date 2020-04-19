@@ -11,7 +11,7 @@ function App() {
   useEffect(() => {
     if (fetched === false) {
       axios
-        .get("/latest.json")
+        .get("http://127.0.0.1:5000/data")
         .then(response => {
           setDistricts(response.data.Assam);
           setFetched(true);
