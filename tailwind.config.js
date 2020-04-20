@@ -32,7 +32,7 @@ module.exports = {
         }
       },
       screens: {
-        avg: "1900px"
+        avg: "1950px"
       }
     },
     linearBorderGradients: theme => ({ colors: theme("colors") }),
